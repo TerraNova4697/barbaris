@@ -299,8 +299,6 @@ a, a:link, a:visited {
 
 /* WORKFLOW SECTION */
 
-
-
 .workflow-section {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -320,11 +318,7 @@ a, a:link, a:visited {
     display: flex;
     justify-content: space-between;
     width: 80rem;
-    /* padding: 2rem; */
     height: 11.5rem;
-    /* height: fit-content; */
-    /* background-image: url('../assets/road.png');
-    background-size: cover; */
 }
 
 .workflow__container .road-img {
@@ -351,16 +345,108 @@ a, a:link, a:visited {
     z-index: 2;
 }
 
-.stage-4 {
+.stage-container {
+    position: relative;
 }
 
 .stage-note {
     position: absolute;
+    font-size: 1.8rem;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.note-1, .note-2 {
+    top: 5rem;
+    left: -.3rem;
+}
+
+.note-3, .note-4 {
+    top: -5rem;
+    right: -6px;
 }
 
 .workflow__container .stage-img {
     width: 4rem;
     height: 4rem;
+}
+
+.stage-details, .stage-details:hover {
+    background-color: transparent;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    top: 1rem;
+    left: 1rem;
+    transform: translate(-50%, -40%);
+    opacity: 0;
+}
+
+.details-1 {
+    background-image: url('../assets/stage-img-big.png');
+    background-size: cover;
+}
+
+.details-2 {
+    background-image: url('../assets/stage-img-big.png');
+    background-size: cover;
+}
+
+.details-3 {
+    background-image: url('../assets/stage-img-big.png');
+    background-size: cover;
+}
+
+.details-4 {
+    background-image: url('../assets/stage-img-big.png');
+    background-size: cover;
+}
+
+@keyframes stageover {
+    0% {
+        width: 2rem;
+        height: 2rem;
+        opacity: 0;
+        z-index: inherit;
+        padding: 0;
+    }
+    100% {
+        width: 20rem;
+        height: 20rem;
+        z-index: 3;
+        opacity: 1;
+        padding: 6rem 3rem;
+    }
+}
+
+@keyframes textOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-opacity {
+    animation-name: textOpacity;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+}
+
+.shown {
+    animation-name: stageover;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.stage-details p {
+    margin: auto;
+    display: none;
+    opacity: 0;
 }
 
 .workflow__image {
