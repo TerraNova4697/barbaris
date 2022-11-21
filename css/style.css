@@ -17,6 +17,7 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.7;
+    background-color: #f5f5f5;
 }
 
 section {
@@ -33,11 +34,12 @@ a, a:link, a:visited {
 /* MENU */
 
 .menu-section {
-    background-color: rgba(255, 255, 255, 0.685);
+    background-color: rgba(255, 255, 255, 1);
     height: 10rem;
     position: fixed;
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 .menu-bar {
@@ -455,6 +457,79 @@ a, a:link, a:visited {
     height: 15rem;
     background-image: url('../assets/stages.png');
     background-size: cover;
+}
+
+/* SECTION TARIFS */
+
+.section-tarifs-container {
+    background-color: white;
+    padding-bottom: 10rem;
+}
+
+.tarifs__header {
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    text-align: center;
+    background-color: white;
+}
+
+.tarifs-section {
+    width: 100rem;
+    display: flex;
+    justify-content: space-between;
+    
+    margin: auto;
+    background-color: white;
+}
+
+.tarif-card {
+    width: 30rem;
+    height: 55rem;
+    border-radius: 20px;
+    border: 1px solid #afafaf;
+    position: relative;
+    overflow: hidden;
+}
+
+.tarif-image {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #e68660;
+    position: absolute;
+}
+
+.tarif-info {
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+    height: 25.5rem;
+    border-radius: 20px;
+    padding: 2.5rem;
+    z-index: 2;
+    background-color: #f5f5f5;
+}
+
+.tarif__card-header {
+    font-size: 2rem;
+}
+
+.tarif__card-text {
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.tarif__card-price {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.tarif__btn {
+    margin: auto; 
+    display: block; 
+    margin-top: 2.5rem;
 }
 
 .place {
