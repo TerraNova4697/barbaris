@@ -109,6 +109,7 @@ a, a:link, a:visited {
     flex-direction: column;
     height: 100%;
     padding-right: .5rem;
+    max-width: 20rem;
 }
 
 .menu-bar__tel {
@@ -121,11 +122,16 @@ a, a:link, a:visited {
     height: 5rem;
     display: flex;
     justify-content: space-evenly;
+    max-width: 20rem;
 }
 
 .menu-bar__social-network span {
     display: inline-block;
     height: 100%;
+}
+
+.menu-bar__social-network a {
+    max-width: 3.5rem;
 }
 
 .menu-bar__social-media {
