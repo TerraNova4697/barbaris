@@ -293,7 +293,7 @@ a, a:link, a:visited {
     background-image: url('../assets/bg-photo.jpg');
     background-size: cover;
     background-attachment: fixed, fixed;
-    background-position: center;
+    background-position: bottom;
     -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
     content: "";
@@ -652,7 +652,7 @@ a, a:link, a:visited {
     justify-content: space-between;
     width: 100rem;
     /* padding: 10rem 0rem 10rem 0rem; */
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
     margin: auto;
 }
 
@@ -681,7 +681,9 @@ a, a:link, a:visited {
 
 .row {
     max-width: 100rem;
-    margin: 0 auto; }
+    margin: 0 auto; 
+    border-radius: 20px;
+}
     .row:not(:last-child) {
       margin-bottom: 8rem; }
       @media (max-width: 56.25em) {
@@ -720,19 +722,19 @@ a, a:link, a:visited {
       width: calc(3 * ((100% - 3 * 6rem) / 4) + 6rem * 2); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/food-container.jpg);
   background-size: cover;
-  border-radius: 3px;
+  border-radius: 20px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); 
 }
 @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../assets/food-container.jpg);
       background-size: cover; } 
 }
 @media (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../assets/food-container.jpg);
       background-size: cover; } 
 }
 .book__form {
@@ -749,17 +751,18 @@ a, a:link, a:visited {
 }
 
 .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/food-container.jpg);
     background-size: cover;
-    border-radius: 3px;
+    background-position: center;
+    border-radius: 20px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     @media (max-width: 75em) {
       .book {
-        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../assets/food-container.jpg);
         background-size: cover; } }
     @media (max-width: 56.25em) {
       .book {
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../assets/food-container.jpg);
         background-size: cover; } }
     .book__form {
       width: 50%;
@@ -854,6 +857,74 @@ a, a:link, a:visited {
   
   .form__radio-input:checked + .form__radio-label .form__radio-button::after {
     opacity: 1; }
+
+/* FORM SECTION */
+
+.form-section {
+    padding: 10rem 0;
+    background-color: white;
+}
+
+/* SECTION FOOTER */
+
+.footer {
+    background-color: #333;
+    padding: 10rem 0;
+    font-size: 1.4rem;
+    color: #f7f7f7; }
+    @media (max-width: 56.25em) {
+      .footer {
+        padding: 8rem 0; } }
+    .footer__logo-box {
+      text-align: center;
+      margin-bottom: 8rem; }
+      @media (max-width: 56.25em) {
+        .footer__logo-box {
+          margin-bottom: 4rem; } }
+    .footer__logo {
+      width: 15rem;
+      height: auto; }
+    .footer__navigation {
+      border-top: 1px solid #777;
+      padding-top: 2rem;
+      width: 100%;
+      display: inline-block; }
+      @media (max-width: 56.25em) {
+        .footer__navigation {
+          width: 100%;
+          text-align: center;
+           } }
+    .footer__list {
+      list-style: none; 
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+    }
+    .footer__item {
+      display: inline-block; }
+      .footer__item:not(:last-child) {
+        margin-right: 1.5rem; }
+    .footer__link:link, .footer__link:visited {
+      color: #f7f7f7;
+      background-color: #333;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all .2s; }
+    .footer__link:hover, .footer__link:active {
+      color: #7ed56f;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: scale(1.3) rotate(5deg); }
+    .footer__copyright {
+      color: #f7f7f7;
+      border-top: 1px solid #777;
+      padding-top: 2rem;
+      width: 80%;
+      float: right; }
+      @media (max-width: 56.25em) {
+        .footer__copyright {
+          width: 100%;
+          float: none; } }
 
 .place {
     margin-top: 30rem;
