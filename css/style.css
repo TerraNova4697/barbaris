@@ -36,7 +36,7 @@ a:visited {
 /* MENU */
 
 .menu-section {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
   height: 10rem;
   position: fixed;
   left: 0;
@@ -140,8 +140,11 @@ a:visited {
 /* MAIN BLOCK */
 
 .main_block-section {
-  height: 100vh;
-  padding-top: 20rem;
+  height: 80vh;
+  /* padding-top: 20rem; */
+  /* min-width: ; */
+  display: flex;
+  justify-content: center;
 }
 
 .bg-video {
@@ -151,20 +154,20 @@ a:visited {
   height: 100%;
   width: 100%;
   z-index: -1;
-  /* opacity: .45; */
+  opacity: .65;
 }
 
 .bg-video__content {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
 }
 
 .main_block__content {
   width: 100rem;
-  margin: 0 auto;
-  height: 50rem;
+  margin: auto auto;
+  /* height: 30rem; */
   font-size: 1.6rem;
   background-color: #fff;
   border-radius: 22px;
@@ -178,16 +181,17 @@ a:visited {
 }
 
 .main-block__content__card h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   padding-bottom: 2rem;
-  padding-top: 9rem;
+  padding-top: 4rem;
 }
 
 .main-block__content__card p {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   color: #9a9696;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
 }
 
 .btn {
@@ -864,6 +868,13 @@ a:visited {
   display: block;
   width: 90%;
   transition: all 0.3s;
+}
+.phone-input {
+  border-bottom: 3px solid #ff7730;
+  width: 24rem;
+  margin: auto;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
 }
 @media (max-width: 56.25em) {
   .form__input {
