@@ -349,7 +349,40 @@
     </div>
 
     <div class="form-section">
-      <div class="row">
+
+      <h1 class="form-section__header">Отправьте запрос на бесплатную консультацию</h1>
+      <h2 class="form-section__subheader">Наш специалист свяжется с вами, чтобы уточнить все детали</h2>
+
+      <form class="form-section__form" action="" method="post">
+        <div class="form__group form-section__input-container">
+          <input
+            type="text"
+            class="form__input form-section__input"
+            placeholder="Имя"
+            id="name"
+            required
+          />
+          <label for="name" class="form__label">Имя</label>
+        </div>
+
+        <div class="form__group form-section__input-container">
+          <input
+            type="tel"
+            class="form__input form-section__input"
+            placeholder="Номер телефона"
+            id="email"
+            required
+          />
+          <label for="email" class="form__label">Номер телефона</label>
+        </div>
+
+        <div class="form__group centered">
+          <button class="btn btn--green">Далее &rarr;</button>
+        </div>
+      </form>
+
+
+      <!-- <div class="row">
         <div class="book">
           <div class="book__form">
             <form action="#" class="form">
@@ -378,40 +411,27 @@
                 />
                 <label for="email" class="form__label">Номер телефона</label>
               </div>
-              <!--
-                        <div class="form__group">
-                            <div class="form__radio-group">
-                                <input type="radio" class="form__radio-input" name="size" id="small">
-                                <label for="small" class="form__radio-label">
-                                    <span class="form__radio-button"></span>
-                                    Small tour group
-                                </label>
-                            </div>
-                            
-                            <div class="form__radio-group">
-                                <input type="radio" class="form__radio-input" name="size" id="large">
-                                <label for="large" class="form__radio-label">
-                                    <span class="form__radio-button"></span>
-                                    Large tour group
-                                </label>
-                            </div>
-                        </div> -->
-
               <div class="form__group">
                 <button class="btn btn--green">Далее &rarr;</button>
               </div>
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <footer class="footer">
-      <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
-      </div>
-      <div class="row">
+      <div class="row footer_row">
         <div class="col-1-of-2">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9370e443e0cde25ccf659a45ddfe351c821325122e6d288cc0b80af5ecfbd077&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          <!-- <script 
+            type="text/javascript" 
+            charset="utf-8" 
+            async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9370e443e0cde25ccf659a45ddfe351c821325122e6d288cc0b80af5ecfbd077&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true">
+          </script> -->
+          <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9370e443e0cde25ccf659a45ddfe351c821325122e6d288cc0b80af5ecfbd077&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script> -->
+        </div>
+        <div class="col-1-of-2 footer_column">
           <div class="footer__navigation">
             <ul class="footer__list">
               <li class="footer__item">
@@ -426,20 +446,25 @@
               <li class="footer__item">
                 <a href="#" class="footer__link">Контакты</a>
               </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+              </li>
+
             </ul>
+            <div class="footer__logo-box">
+              <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+            </div>
+            <h1 class="footer__info">Барбарис</h1>
+            <h1 class="footer__info">Астана, Незнайкино 1/4</h1>
+            <h1 class="footer__info">Email: example@email.com</h1>
+            <h1 class="footer__info">Телефон: +7(701)234-56-78</h1>
           </div>
-        </div>
-        <div class="col-1-of-2">
-          <p class="footer__copyright">
-            <a href="#" class="footer__link">Политика конфиденциальности</a>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quod
-            debitis, repudiandae dignissimos distinctio sapiente necessitatibus
-            eius unde praesentium dolores temporibus nihil officia nisi beatae
-            dicta ipsum, id voluptatem. Hic.
-          </p>
         </div>
       </div>
     </footer>
+
+    
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

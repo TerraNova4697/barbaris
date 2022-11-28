@@ -221,6 +221,10 @@ a:visited {
   text-decoration: none;
 }
 
+.centered {
+  text-align: center;
+}
+
 /* OUR ADVANTAGES */
 
 .our-advantages-section {
@@ -297,8 +301,8 @@ a:visited {
 /* BACKGROUND PHOTO SECTION */
 
 .bg-photo-section {
-  height: 140vh;
-  margin-top: -20rem;
+  height: 100vh;
+  margin-top: -25rem;
   background-image: url("../assets/bg-photo.jpg");
   background-size: cover;
   background-attachment: fixed, fixed;
@@ -313,12 +317,13 @@ a:visited {
 
 .workflow-section {
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
   width: 97rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   text-align: center;
+  margin-top: -6rem;
 }
 
 .workflow__header {
@@ -496,14 +501,14 @@ a:visited {
 
 .section-tarifs-container {
   background-color: white;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
 }
 
 .tarifs__header {
   font-size: 2.5rem;
   margin-bottom: 0rem;
-  padding-bottom: 10rem;
-  padding-top: 10rem;
+  padding-bottom: 7rem;
+  padding-top: 7rem;
   text-align: center;
   background-color: white;
 }
@@ -568,7 +573,7 @@ a:visited {
 /* SECTION LAST-SECTION */
 
 .last-section {
-  padding: 10rem 0;
+  padding: 7rem 0;
 }
 
 .last-section__header {
@@ -728,10 +733,31 @@ a:visited {
   background-image: url(../assets/macdonalds.svg);
 }
 
+.form-section__header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-section__subheader {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #aba8a8;
+}
+
+.form-section__form {
+  width: 100rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  margin: 2rem auto 3rem auto;
+}
+
+
+
 .row {
-  max-width: 100rem;
+  max-width: 100%;
   margin: 0 auto;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 .row:not(:last-child) {
   margin-bottom: 8rem;
@@ -908,12 +934,28 @@ a:visited {
 }
 .phone-input {
   border-bottom: 3px solid #ff7730;
-  font-size: 1.6rem;
-  width: 24rem;
-  margin: auto;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  margin: auto;
+  width: 24rem;
   padding: 1rem 1.5rem;
 }
+
+.form-section__input {
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  margin: auto;
+  border-bottom: 3px solid #ff7730;
+  margin: 0;
+  width: 100%;
+}
+
+.form-section__input-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 56.25em) {
   .form__input {
     width: 100%;
@@ -1000,7 +1042,7 @@ a:visited {
 /* FORM SECTION */
 
 .form-section {
-  padding: 10rem 0;
+  padding: 7rem 0 5rem 0;
   background-color: white;
 }
 
@@ -1008,7 +1050,8 @@ a:visited {
 
 .footer {
   background-color: #333;
-  padding: 10rem 0;
+  padding: 0rem 0;
+  height: 80vh;
   font-size: 1.4rem;
   color: #f7f7f7;
 }
@@ -1031,9 +1074,9 @@ a:visited {
   height: auto;
 }
 .footer__navigation {
-  border-top: 1px solid #777;
+  /* border-top: 1px solid #777; */
   padding-top: 2rem;
-  width: 100%;
+  width: 80%;
   display: inline-block;
 }
 @media (max-width: 56.25em) {
@@ -1081,6 +1124,24 @@ a:visited {
     width: 100%;
     float: none;
   }
+}
+
+.col-1 {
+  width: 50%;
+  display: inline-block;
+}
+
+.footer_row {
+  height: 80vh;
+}
+.footer_column {
+  margin: auto 0;
+  text-align: center;
+}
+
+.footer__info {
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .place {

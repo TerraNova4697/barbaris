@@ -13,13 +13,13 @@ for (let i = 0; i < stageImages.length; i++) {
       // }, 200)
     } else if (currImage === "stage-img-2") {
       stageDetails[1].classList.add("shown");
-      stageText[1].style.display = "block";
+      // stageText[1].style.display = "block";
     } else if (currImage === "stage-img-3") {
       stageDetails[2].classList.add("shown");
-      stageText[2].style.display = "block";
+      // stageText[2].style.display = "block";
     } else if (currImage === "stage-img-4") {
       stageDetails[3].classList.add("shown");
-      stageText[3].style.display = "block";
+      // stageText[3].style.display = "block";
     }
   });
 }
@@ -29,16 +29,16 @@ for (let i = 0; i < stageDetails.length; i++) {
     let currStage = event.target.className.split(" ")[1];
     if (currStage === "details-1") {
       stageDetails[0].classList.remove("shown");
-      stageText[0].style.display = "none";
+      // stageText[0].style.display = "none";
     } else if (currStage === "details-2") {
       stageDetails[1].classList.remove("shown");
-      stageText[1].style.display = "none";
+      // stageText[1].style.display = "none";
     } else if (currStage === "details-3") {
       stageDetails[2].classList.remove("shown");
-      stageText[2].style.display = "none";
+      // stageText[2].style.display = "none";
     } else if (currStage === "details-4") {
       stageDetails[3].classList.remove("shown");
-      stageText[3].style.display = "none";
+      // stageText[3].style.display = "none";
     }
   });
 }
