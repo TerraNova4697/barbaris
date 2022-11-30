@@ -344,16 +344,43 @@ a:visited {
 /* BACKGROUND PHOTO SECTION */
 
 .bg-photo-section {
-  height: 100vh;
+  height: 70vh;
   margin-top: -25rem;
-  background-image: url("../assets/bg-photo.jpg");
+  background-image: url("../assets/background-photo.jpg");
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.45) 100%), url("../assets/background-photo.jpg");
   background-size: cover;
   background-attachment: fixed, fixed;
-  background-position: bottom;
+  background-position: center;
   -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   content: "";
   position: relative;
+}
+
+.bg-photo__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 120rem;
+  gap: 4.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-photo__content h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  letter-spacing: nowrap;
+}
+
+.bg-photo-section__form {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 /* WORKFLOW SECTION */
@@ -994,7 +1021,7 @@ a:visited {
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
   font-size: 1.6rem;
   margin: auto;
-  border-bottom: 3px solid #ff7730;
+  border-bottom: 3px solid #b61c2d;
   margin: 0;
   width: 100%;
 }
