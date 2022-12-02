@@ -729,7 +729,7 @@ dt:after {
 }
 
 .last-section__subheader {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 5rem;
   text-align: center;
 }
@@ -1212,7 +1212,7 @@ dt:after {
 /* FORM SECTION */
 
 .form-section {
-  padding: 7rem 0 5rem 0;
+  padding: 7rem 0 3rem 0;
   background-color: white;
 }
 
@@ -1221,7 +1221,7 @@ dt:after {
 .footer {
   background-color: #333;
   padding: 0rem 0;
-  height: 80vh;
+  height: 60vh;
   font-size: 1.4rem;
   color: #f7f7f7;
 }
@@ -1260,6 +1260,9 @@ dt:after {
   display: flex;
   justify-content: center;
   padding-left: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #333;
 }
 .footer__item {
   display: inline-block;
@@ -1302,7 +1305,8 @@ dt:after {
 }
 
 .footer_row {
-  height: 80vh;
+  height: 60vh;
+  margin-bottom: 0 !important; 
 }
 .footer_column {
   margin: auto 0;
