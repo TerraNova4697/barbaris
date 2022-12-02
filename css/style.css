@@ -352,7 +352,7 @@ a:visited {
 /* BACKGROUND PHOTO SECTION */
 
 .bg-photo-section {
-  height: 70vh;
+  height: 50vh;
   margin-top: -25rem;
   background-image: url("../assets/background-photo.jpg");
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.45) 100%), url("../assets/background-photo.jpg");
@@ -1113,7 +1113,7 @@ dt:after {
 
 .form-section__input {
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: auto;
   border-bottom: 3px solid #b61c2d;
   margin: 0;
@@ -1316,6 +1316,17 @@ dt:after {
 .footer__info {
   font-size: 2.5rem;
   text-align: center;
+}
+
+.btn-big{
+  max-height: 5.5rem;
+  height: 5.5rem;
+  font-size: 2rem;
+  
+}
+
+.phone-input::placeholder {
+  /* color: #b61c2d; */
 }
 
 .place {
