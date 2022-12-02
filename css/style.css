@@ -277,20 +277,16 @@ a:visited {
   /* background-color: #fff; */
   background-color: transparent;
   border-radius: 22px;
-  height: 50rem;
   display: flex;
+  margin-bottom: 10rem;
   justify-content: flex-start;
+
 }
 
 .our-advantages__header {
-  display: inline-block;
-  width: 55%;
-  height: 100%;
-  padding-top: 6rem;
-  padding-left: 2rem;
-  align-items: center;
-  display: flex;
-  justify-content: end;
+  font-size: 4rem;
+  margin: 4rem auto;
+  text-align: center;
 }
 
 .our-advantages__header h1 {
@@ -304,10 +300,17 @@ a:visited {
   color: #9a9696;
 }
 
-.our-advantages__container {
+.our-advantages__container-left {
   display: inline-block;
   height: 100%;
   width: 50%;
+}
+
+.our-advantages__container-right {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  text-align: right;
 }
 
 .our-advantages__points {
@@ -315,6 +318,7 @@ a:visited {
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
+  gap: 6rem;
 }
 
 .our-advantages__point {
@@ -323,6 +327,10 @@ a:visited {
   justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
+}
+
+.our-advantages__point {
+  width: 90%;
 }
 
 .our-advantages__point:last-child {
@@ -351,8 +359,8 @@ a:visited {
   background-size: cover;
   background-attachment: fixed, fixed;
   background-position: center;
-  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+  clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
   content: "";
   position: relative;
 }
@@ -386,7 +394,7 @@ a:visited {
 /* WORKFLOW SECTION */
 
 .workflow-section {
-  padding-top: 10rem;
+  padding-top: 12rem;
   padding-bottom: 7rem;
   width: 97rem;
   margin-left: auto;
