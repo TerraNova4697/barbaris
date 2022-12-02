@@ -395,7 +395,7 @@ a:visited {
 
 .workflow-section {
   padding-top: 12rem;
-  padding-bottom: 7rem;
+  padding-bottom: 10rem;
   width: 97rem;
   margin-left: auto;
   margin-right: auto;
@@ -405,7 +405,7 @@ a:visited {
 }
 
 .workflow__header {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 10rem;
 }
 
@@ -464,6 +464,10 @@ a:visited {
   right: -6px;
 }
 
+.note-3 {
+  right: -35px;
+}
+
 .workflow__container .stage-img {
   width: 4rem;
   height: 4rem;
@@ -485,22 +489,22 @@ a:visited {
 }
 
 .details-1 {
-  background-image: url("../assets/stage-img-big.png");
+  background-image: url("../assets/stage-1.png");
   background-size: cover;
 }
 
 .details-2 {
-  background-image: url("../assets/stage-img-big.png");
+  background-image: url("../assets/stage-2.png");
   background-size: cover;
 }
 
 .details-3 {
-  background-image: url("../assets/stage-img-big.png");
+  background-image: url("../assets/stage-3.png");
   background-size: cover;
 }
 
 .details-4 {
-  background-image: url("../assets/stage-img-big.png");
+  background-image: url("../assets/stage-4.png");
   background-size: cover;
 }
 
