@@ -18,59 +18,77 @@
     <title>Барбарис</title>
   </head>
   <body>
-    <!-- <div class="menu-section">
-      <div class="menu-bar">  -->
-        <!-- TODO: Сюда вставить лого -->
-        
 
-        <!-- TODO: Сюда вставить ссылки -->
-        <!-- <ul class="menu-bar__navigation">
-          <li>
-            <a href="#"
-              ><span class="Centerer"></span
-              ><span class="Centered">Условия</span></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><span class="Centerer"></span
-              ><span class="Centered">Кейтеринг</span></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><span class="Centerer"></span
-              ><span class="Centered">Отзывы</span></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><span class="Centerer"></span
-              ><span class="Centered">Контакты</span></a
-            >
-          </li>
-        </ul>  -->
+    <div id="popup" class="popup-quiz">
+      <div class="popup__content">
+        <div class="question-container">
+          <div class="question-1">
+            <h1>Вопрос 1:</h1>
+            <h4>Укажите вашу должность</h4>
+            <form class="popup-question" action="" method="post">
+              <div class="form__group form-section__input-container">
+                <input
+                  type="text"
+                  class="form__input form-section__input"
+                  placeholder="Должность"
+                  id="user-position-block"
+                  required
+                />
+                <label for="company-middle-block" class="form__label">Должность</label>
+              </div>
+      
+            </form>
+          </div>
 
-        <!-- TODO: Прикрепить ссылки на соц.медиа и номер телефона -->
-        <!-- <div class="menu-bar__contacts">
-          <span tel="+77012345678" class="menu-bar__tel">+7(701)234-56-78</span>
-          <div class="menu-bar__social-network">
-            <a
-              ><img
-                src="assets/wp.png"
-                alt="What's app"
-                class="menu-bar__social-media"
-            /></a>
-            <a
-              ><img
-                src="assets/inst.png"
-                alt="Инстаграм"
-                class="menu-bar__social-media"
-            /></a>
+          <div class="question-2">
+            <h1>Вопрос 2:</h1>
+            <h4>Сколько человек в вашей компании</h4>
+            <form class="popup-question" action="" method="post">
+              <div class="form__group form-section__input-container">
+                <input
+                  type="text"
+                  class="form__input form-section__input"
+                  placeholder="Человек в компании"
+                  id="company-employees-block"
+                  required
+                />
+                <label for="company-middle-block" class="form__label">Человек в компании</label>
+              </div>
+      
+            </form>
+          </div>
+
+          <div class="question-3">
+            <h1>Спасибо!</h1>
+            <h4>Наш менеджер свяжется с вами в ближайшее рабочее время.</h4>
+            <!-- <form class="popup-question" action="" method="post">
+              <div class="form__group form-section__input-container">
+                <input
+                  type="text"
+                  class="form__input form-section__input"
+                  placeholder="Должность"
+                  id="user-position-block"
+                  required
+                />
+                <label for="company-middle-block" class="form__label">Должность</label>
+              </div>
+      
+            </form> -->
           </div>
         </div>
+        
+        <div class="control-panel">
+          <div class="form__group centered">
+            <button id="quizCancelBtn" class="btn btn--green">Отмена</button>
+          </div>
+          <h4 class="discount">Скидка 0%</h4>
+          <div class="form__group centered">
+            <button id="nextQuestionBtn" class="btn btn--green">Далее &rarr;</button>
+          </div>
+        </div>
+        <div class="progress-bar"></div>
       </div>
-    </div> -->
+    </div>
 
     <div class="menu-section">
       <div class="container">
@@ -111,20 +129,7 @@
               <a href="tel:+77012770566" class="menu-bar__tel">+7 (701) 277-05-66</a>
               <span class="menu-bar__social-network"><a target="_blank" href="https://api.whatsapp.com/send?phone=77012770566&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%B1%D0%B5%D0%B4%D1%8B%20%D0%B2%20%D0%BE%D1%84%D0%B8%D1%81"><img src="assets/wp.png" alt="Ссылка на What's app" class="menu-bar__social-media" srcset=""></a></span>
               <span class="menu-bar__social-network"><a target="_blank" href="https://www.instagram.com/barbaris_masterfood/"><img src="assets/inst.png" alt="Ссылка на Instagram" class="menu-bar__social-media" srcset=""></a></span>
-              <!-- <div class="menu-bar__social-network">
-                <a
-                  ><img
-                    src="assets/wp.png"
-                    alt="What's app"
-                    class="menu-bar__social-media"
-                /></a>
-                <a
-                  ><img
-                    src="assets/inst.png"
-                    alt="Инстаграм"
-                    class="menu-bar__social-media"
-                /></a>
-              </div> -->
+              
             </div>
           </div>
         </div>
@@ -133,11 +138,6 @@
 
     <div class="main_block-section">
       <div class="bg-video">
-        <!-- <video class="bg-video__content" autoplay muted loop>
-          <source src="assets/video.mp4" type="video/mp4" />
-          <source src="assets/video.webm" type="video/webm" />
-          Your browser is not supported
-        </video> -->
       </div>
 
       <div class="main_block__content">
@@ -145,20 +145,30 @@
         <div class="main-block__content__card">
           <h1>Доставляем комплексные обеды <br><span>в офисы Астаны</span></h1>
           <p>
-            Пройдите опрос и получите пробный день со скидкой в 30%.
+            Пройдите опрос и получите пробный день со скидкой в 10%.
           </p>
           <form class="form">
             <div class="form__group" style="margin-bottom: .8rem;">
               <input
                 type="tel"
                 class="form__input phone-input"
-                placeholder="Номер телефона"
-                id="phone"
+                placeholder="Имя компании"
+                id="company-first-block"
                 required
               />
-              <label for="name" class="form__label">Номер телефона</label>
+              <label id="company-first-block-label" for="company-first-block" class="form__label">Имя компании</label>
             </div>
-            <button class="btn">Получить скидку</button>
+            <div class="form__group" style="margin-bottom: .8rem;">
+              <input
+                type="tel"
+                class="form__input phone-input"
+                placeholder="Номер телефона"
+                id="phone-first-block"
+                required
+              />
+              <label id="phone-first-block-label" for="phone-first-block" class="form__label">Номер телефона</label>
+            </div>
+            <button id="mainBlock" class="btn quiz-btn">Получить скидку</button>
           </form>
         </div>
       </div>
@@ -222,10 +232,10 @@
               type="text"
               class="form__input form-section__input phone-input"
               placeholder="Имя компании"
-              id="name"
+              id="company-middle-block"
               required
             />
-            <label for="name" class="form__label">Имя компании</label>
+            <label for="company-middle-block" class="form__label">Имя компании</label>
           </div>
   
           <div class="form__group form-section__input-container">
@@ -233,14 +243,14 @@
               type="tel"
               class="form__input form-section__input phone-input"
               placeholder="Номер телефона"
-              id="email"
+              id="phone-middle-block"
               required
             />
-            <label for="email" class="form__label">Номер телефона</label>
+            <label id="phone-middle-block-label" for="phone-middle-block" class="form__label">Номер телефона</label>
           </div>
   
           <div class="form__group centered">
-            <button class="btn btn--green btn-big">Заказать</button>
+            <button id="middleBlock" class="btn btn--green btn-big quiz-btn">Заказать</button>
           </div>
         </form>
       </div>
@@ -414,11 +424,6 @@
                 действительности). И конечно же, работу курьера: его пунктуальность, вежливость)))
                 Спасибо огромное, будем Вашими клиентами и с нетерпением ждем чем же Вы полакомите нас завтра.
               </p>
-              <!-- <img
-                src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-              />
-              <h3 class="name">Albert Sinelly</h3>
-              <h4 class="job">Founder Of Devoker Company</h4> -->
             </div>
             <div class="slide-box">
               <!-- Testi Two -->
@@ -426,11 +431,6 @@
                 Спасибо, всем все понравилось. Будем рекомендовать вас. Были приятно удивлены тем, что вложено 
                 все необходимое. И очень порадовало время доставки.
               </p>
-              <!-- <img
-                src="https://images.unsplash.com/photo-1627541718143-1adc1b582e62?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bXVzbGltfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-              />
-              <h3 class="name">Hirok Meryam</h3>
-              <h4 class="job">Full stack Developer, Speaker</h4> -->
             </div>
             <div class="slide-box">
               <!-- Testi Three -->
@@ -439,11 +439,6 @@
                 Приятно удивило содержимое пакета: хлеб, пакетик чая, зубочистка, разовые пакетики соли и перца, салфеточки, 
                 одноразовый сахар. Обед был ооочень вкусный. Спасибо большое за вашу работу. Удачи вам и успехов!
               </p>
-              <!-- <img
-                src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGZhY2V8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-              />
-              <h3 class="name">Sebastian Sert</h3>
-              <h4 class="job">UX/UI Designer, Phtographer</h4> -->
             </div>
 
             <div class="slide-box">
@@ -513,10 +508,10 @@
             type="text"
             class="form__input form-section__input"
             placeholder="Имя компании"
-            id="name"
+            id="company-last-block"
             required
           />
-          <label for="name" class="form__label">Имя компании</label>
+          <label for="company-middle-block" class="form__label">Имя компании</label>
         </div>
 
         <div class="form__group form-section__input-container">
@@ -524,54 +519,16 @@
             type="tel"
             class="form__input form-section__input"
             placeholder="Номер телефона"
-            id="email"
+            id="phone-last-block"
             required
           />
-          <label for="email" class="form__label">Номер телефона</label>
+          <label id="phone-last-block-label" for="phone-last-block" class="form__label">Номер телефона</label>
         </div>
 
         <div class="form__group centered">
-          <button class="btn btn--green">Получить скидку</button>
+          <button id="lastBlock" class="btn btn--green quiz-btn">Получить скидку</button>
         </div>
       </form>
-
-
-      <!-- <div class="row">
-        <div class="book">
-          <div class="book__form">
-            <form action="#" class="form">
-              <div class="u-margin-bottom-medium">
-                <h2 class="heading-secondary">Start booking now!</h2>
-              </div>
-
-              <div class="form__group">
-                <input
-                  type="text"
-                  class="form__input"
-                  placeholder="Имя"
-                  id="name"
-                  required
-                />
-                <label for="name" class="form__label">Имя</label>
-              </div>
-
-              <div class="form__group">
-                <input
-                  type="email"
-                  class="form__input"
-                  placeholder="Номер телефона"
-                  id="email"
-                  required
-                />
-                <label for="email" class="form__label">Номер телефона</label>
-              </div>
-              <div class="form__group">
-                <button class="btn btn--green">Далее &rarr;</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div> -->
     </div>
 
     <footer class="footer">
@@ -622,7 +579,6 @@
     </footer>
 
     
-    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -631,6 +587,7 @@
     ></script>
     <script src="js/stages.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/quizBtns.js"></script>
     <!-- <script src="js/navBar.js"></script> -->
   </body>
 </html>
