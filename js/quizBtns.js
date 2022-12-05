@@ -21,17 +21,17 @@ const progressBar = document.querySelector('.progress-bar')
 const discount = document.querySelector('.discount')
 
 
-function moveSlider() {
+function moveQuestion() {
     let leftMargin = (quizElm.clientWidth / numberQuestionBoxs) * idxCurrentQuestion;
     quizElm.style.marginLeft = -leftMargin + "px";
     console.log(quizElm.clientWidth, leftMargin);
 }
 
-function moveRight() {
+function moveQuestionRight() {
     if (idxCurrentQuestion === numberQuestionBoxs - 1) idxCurrentQuestion = 0;
     else idxCurrentQuestion++;
   
-    moveSlider();
+    moveQuestion();
 }
 
 for(let i = 0; i < buttons.length; i++) {
@@ -123,7 +123,7 @@ quizCancelBtn.addEventListener('click', (event) => {
     discount.innerHTML = 'Скидка 0%'
 
     idxCurrentQuestion = 0
-    moveSlider()
+    moveQuestion()
 })
 
 quizNextQuestionBtn.addEventListener('click', (event) => {
@@ -149,7 +149,7 @@ quizNextQuestionBtn.addEventListener('click', (event) => {
 
             progressBar.classList.add('fifty-percent')
             discount.innerHTML = 'Скидка 5%'
-            moveRight();
+            moveQuestionRight();
         } else {alert('Необходимо ввести данные')}
     } 
     else if(JSONToQuizProgress.questionNum == '2') {
@@ -171,7 +171,7 @@ quizNextQuestionBtn.addEventListener('click', (event) => {
             }
             const quizProgressToJSON = JSON.stringify(quizProgress)
             sessionStorage.setItem('quizProgress', quizProgressToJSON)
-            moveRight();
+            moveQuestionRight();
         } else {alert('Необходимо ввести данные')}
     }
     else if(JSONToQuizProgress.questionNum == '3') {
