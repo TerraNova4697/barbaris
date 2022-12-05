@@ -11,8 +11,8 @@ const quizElm = document.querySelector(".popup__content .question-container");
 const numberQuestionBoxs = quizElm.children.length;
 let idxCurrentQuestion = 0;
 
-const quizCancelBtn = document.getElementById('quizCancelBtn')
-const quizNextQuestionBtn = document.getElementById('nextQuestionBtn')
+const quizCancelBtn = document.getElementsByClassName('quizCancelBtn')
+const quizNextQuestionBtn = document.getElementsByClassName('nextQuestionBtn')
 
 const userPosition = document.getElementById('user-position-block')
 const companyEmployees = document.getElementById('company-employees-block')
@@ -113,20 +113,26 @@ for(let i = 0; i < buttons.length; i++) {
     })
 }
 
-quizCancelBtn.addEventListener('click', (event) => {
-    event.preventDefault()
-    popup.classList.remove("popup-shown");
+for (let i = 0; i < quizCancelBtn.length; i++) {
+    quizCancelBtn[i].addEventListener('click', (event) => {
+        event.preventDefault()
+        popup.classList.remove("popup-shown");
+    
+        progressBar.classList.remove('hundreed-percent')
+        progressBar.classList.remove('fifty-percent')
+    
+        // discount.innerHTML = 'Скидка 0%'
+    
+        idxCurrentQuestion = 0
+        moveQuestion()
+    })
+}
 
-    progressBar.classList.remove('hundreed-percent')
-    progressBar.classList.remove('fifty-percent')
+for (let i = 0; i < quizNextQuestionBtn.length; i++) {
+    quizNextQuestionBtn[i].addEventListener('click', onNextQuestionClicked)
+}
 
-    discount.innerHTML = 'Скидка 0%'
-
-    idxCurrentQuestion = 0
-    moveQuestion()
-})
-
-quizNextQuestionBtn.addEventListener('click', (event) => {
+function onNextQuestionClicked(event) {
     event.preventDefault();
     const quizProgress = sessionStorage.getItem('quizProgress')
     const JSONToQuizProgress = JSON.parse(quizProgress)
@@ -148,7 +154,6 @@ quizNextQuestionBtn.addEventListener('click', (event) => {
             sessionStorage.setItem('quizProgress', quizProgressToJSON)
 
             progressBar.classList.add('fifty-percent')
-            discount.innerHTML = 'Скидка 5%'
             moveQuestionRight();
         } else {alert('Необходимо ввести данные')}
     } 
@@ -164,7 +169,6 @@ quizNextQuestionBtn.addEventListener('click', (event) => {
             // TODO: SEND TO TELEGRAM BOT
             sessionStorage.clear();
             progressBar.classList.add('hundreed-percent')
-            discount.innerHTML = 'Скидка 10%'
 
             const quizProgress = {
                 questionNum: '3',
@@ -177,8 +181,7 @@ quizNextQuestionBtn.addEventListener('click', (event) => {
     else if(JSONToQuizProgress.questionNum == '3') {
         popup.classList.remove("popup-shown");
     }
-    
-})
+}
 
 function validatePhoneNumber(phoneNumber) {
     isValid = /^[7-8]\d{10}$/.test(clearPhoneNumber(phoneNumber));
