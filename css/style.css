@@ -379,6 +379,7 @@ a:visited {
   background-color: #f5f5f5;
   padding: 2rem 0;
   padding-bottom: 23rem;
+  position: relative;
   /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     z-index: -1; */
 }
@@ -840,6 +841,7 @@ dt:after {
 
 .last-section {
   padding: 7rem 0;
+  position: relative;
 }
 
 .last-section__header {
