@@ -39,11 +39,11 @@
 
               <div class="control-panel">
                 <div class="form__group centered">
-                  <button id="quizCancelBtn" class="btn btn--green quizCancelBtn">Отмена</button>
+                  <button id="nextQuestionBtn" class="btn btn--green nextQuestionBtn">Далее &rarr;</button>
                 </div>
                 <h4 class="discount">Скидка 0%</h4>
                 <div class="form__group centered">
-                  <button id="nextQuestionBtn" class="btn btn--green nextQuestionBtn">Далее &rarr;</button>
+                  <button id="quizCancelBtn" class="btn btn--green quizCancelBtn">Отмена</button>
                 </div>
               </div>
       
@@ -67,11 +67,11 @@
 
               <div class="control-panel">
                 <div class="form__group centered">
-                  <button id="quizCancelBtn" class="btn btn--green quizCancelBtn">Отмена</button>
+                  <button id="nextQuestionBtn" class="btn btn--green nextQuestionBtn">Далее &rarr;</button>
                 </div>
                 <h4 class="discount">Скидка 5%</h4>
                 <div class="form__group centered">
-                  <button id="nextQuestionBtn" class="btn btn--green nextQuestionBtn">Далее &rarr;</button>
+                  <button id="quizCancelBtn" class="btn btn--green quizCancelBtn">Отмена</button>
                 </div>
               </div>
       
@@ -81,34 +81,73 @@
           <div class="question-3">
             <h1>Спасибо!</h1>
             <h4>Наш менеджер свяжется с вами в ближайшее рабочее время.</h4>
-
+            <img src="assets/done.png" alt="Готово! Мы скоро с Вами свяжемся" srcset="  " class="done_img">
             <div class="control-panel">
-              <div class="form__group centered">
-                <button id="quizCancelBtn" class="btn btn--green quizCancelBtn">Отмена</button>
-              </div>
-              <h4 class="discount">Скидка 10%</h4>
               <div class="form__group centered">
                 <button id="nextQuestionBtn" class="btn btn--green nextQuestionBtn">Далее &rarr;</button>
               </div>
-            </div>
-            <!-- <form class="popup-question" action="" method="post">
-              <div class="form__group form-section__input-container">
-                <input
-                  type="text"
-                  class="form__input form-section__input"
-                  placeholder="Должность"
-                  id="user-position-block"
-                  required
-                />
-                <label for="company-middle-block" class="form__label">Должность</label>
+              <h4 class="discount">Скидка 10%</h4>
+              <div class="form__group centered">
+                <button id="quizCancelBtn" class="btn btn--green quizCancelBtn">Отмена</button>
               </div>
-      
-            </form> -->
+            </div>
           </div>
         </div>
         
         
         <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <div id="order_popup" class="popup-quiz">
+      <div class="popup__content">
+        <div class="order_in_progress">
+          <h1>Пожалуйста заполните анкету</h1>
+          <h4>Чтобы наш менеджер смог с Вами связаться</h4>
+          <form class="popup-question" action="" method="post">
+            <div class="form__group form-section__input-container">
+              <input
+                type="text"
+                class="form__input form-section__input"
+                placeholder="Наименование компании"
+                id="order__company-name"
+                required
+              />
+              <label for="company-middle-block" class="form__label">Наименование компании</label>
+
+              <input
+                type="text"
+                class="form__input form-section__input"
+                placeholder="Номер телефона"
+                id="order__phone-number"
+                required
+              />
+              <label for="company-middle-block" class="form__label">Номер телефона</label>
+
+              <div class="control-panel btns-distance" >
+                <div class="form__group centered">
+                  <button id="orderConfirmBtn" type="submit" class="btn btn--green orderConfirmBtn">Заказать</button>
+                </div>
+                <div class="form__group centered">
+                  <button id="orderCancelBtn" class="btn btn--green orderCancelBtn">Отмена</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="order_confirmed order-hidden">
+          <h1>Спасибо!</h1>
+          <h4>Наш менеджер свяжется с вами в ближайшее рабочее время.</h4>
+          <form class="popup-question" action="" method="post">
+            <img src="assets/done.png" alt="Готово! Мы скоро с Вами свяжемся" srcset="  " class="done_img">
+            <div class="control-panel btns-centered" >
+              <div class="form__group centered">
+                <button id="orderConfirmedClose" type="submit" class="btn btn--green orderConfirmBtn">Закрыть</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -360,7 +399,7 @@
             
             <div class="tarif-card__info-price">
               <h3 class="tarif__card-price">1550₸</h3>
-              <button class="btn tarif__btn">Заказать</button>
+              <button id="orderBtnMinimal" class="btn tarif__btn order-btn">Заказать</button>
             </div>
             
           </div>
@@ -386,7 +425,7 @@
             
             <div class="tarif-card__info-price">
               <h3 class="tarif__card-price">1750₸</h3>
-              <button class="btn tarif__btn">Заказать</button>
+              <button id="orderBtnStandard" class="btn tarif__btn order-btn">Заказать</button>
             </div>
             
           </div>
@@ -413,7 +452,7 @@
             
             <div class="tarif-card__info-price">
               <h3 class="tarif__card-price">2000₸</h3>
-              <button class="btn tarif__btn">Заказать</button>
+              <button  id="orderBtnMaximal" class="btn tarif__btn order-btn">Заказать</button>
             </div>
             
           </div>
@@ -610,6 +649,7 @@
     <script src="js/stages.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/quizBtns.js"></script>
+    <script src="js/order.js"></script>
     <!-- <script src="js/navBar.js"></script> -->
   </body>
 </html>

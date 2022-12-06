@@ -74,6 +74,7 @@ a:visited {
 
 .question-1, .question-2, .question-3 {
   width: 96rem;
+  text-align: center;
 }
 
 .popup__content h1{
@@ -96,6 +97,34 @@ a:visited {
   justify-content: space-evenly;
   width: 80%;
   margin: 2rem auto 2rem auto;
+  flex-direction: row-reverse;
+}
+
+.btns-distance {
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.btns-centered {
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.order-hidden {
+  display: none;
+}
+
+.done_img {
+  width: 120px;
+  margin: 1rem auto;
+}
+
+.order_confirmed {
+  text-align: center;
 }
 
 .progress-bar {

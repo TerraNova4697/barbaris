@@ -61,7 +61,7 @@ for(let i = 0; i < buttons.length; i++) {
                 const userToJSON = JSON.stringify(user)
                 sessionStorage.setItem("user", userToJSON)
             } else {
-                alert("Недействительный номер телефона")
+                alert("Введены недействительные данные")
             }
         }
         else if (buttons[i].id == 'middleBlock') {
