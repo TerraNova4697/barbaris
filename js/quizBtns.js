@@ -17,8 +17,10 @@ const quizNextQuestionBtn = document.getElementsByClassName('nextQuestionBtn')
 const userPosition = document.getElementById('user-position-block')
 const companyEmployees = document.getElementById('company-employees-block')
 
-const progressBar = document.querySelector('.progress-bar')
+const progressBar = document.querySelector('.discount-progress-bar')
 const discount = document.querySelector('.discount')
+
+const QUIZ_URL = 'http://barbaris.local/wp-json/barbaris/v1/quiz';
 
 
 function moveQuestion() {
@@ -165,6 +167,8 @@ function onNextQuestionClicked(event) {
             const userToJSON = JSON.stringify(JSONToUser)
 
             // TODO: SEND TO TELEGRAM BOT
+            sendData('POST', QUIZ_URL, JSONToUser)
+            
             sessionStorage.clear();
             progressBar.classList.add('hundreed-percent')
 

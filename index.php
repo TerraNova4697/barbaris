@@ -78,7 +78,7 @@
         </div>
         
         
-        <div class="progress-bar"></div>
+        <div class="discount-progress-bar"></div>
       </div>
     </div>
 

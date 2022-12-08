@@ -1,5 +1,7 @@
 <?php
 
+include(get_theme_file_path( '/includes/back/order-route.php' ));
+include(get_theme_file_path( '/includes/back/quiz-route.php' ));
 include(get_theme_file_path( '/includes/front/bm_enqueues.php' ));
 include(get_theme_file_path( '/includes/front/bm_setup_theme.php' ));
 

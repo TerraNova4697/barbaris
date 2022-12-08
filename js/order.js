@@ -11,6 +11,8 @@ const orderConfirmedCloseBtn = document.getElementById('orderConfirmedClose')
 const orderCompanyName = document.getElementById('order__company-name');
 const orderPhoneNumber = document.getElementById('order__phone-number');
 
+const ORDER_URL = 'http://barbaris.local/wp-json/barbaris/v1/order';
+
 const orderTypes = {
     orderBtnMinimal: "Минимальный",
     orderBtnStandard: "Стандартный",
@@ -58,6 +60,9 @@ function orderConfirm(event) {
         const order = JSON.parse(JSONOrder)
         order['companyName'] = validatedName;
         order['companyPhoneNumber'] = validatedPhoneNumber;
+        
+        sendData('POST', ORDER_URL, order)
+
         order['orderProgress'] = 'confirmed'
         orderToJSON = JSON.stringify(order);
         sessionStorage.setItem('order', orderToJSON);
@@ -67,4 +72,30 @@ function orderConfirm(event) {
     else {
         alert("Введены недействительные данные");
     }
+}
+
+function sendData(method, url, body=null) {
+    return new Promise((resolve, reject) => {
+        const orderHxr = new XMLHttpRequest()
+
+        orderHxr.open(method, url)
+
+        orderHxr.responseType = 'json'
+        orderHxr.setRequestHeader('Content-Type', 'application/json')
+
+        orderHxr.onload = () => {
+            if (orderHxr.status >= 400) {
+                reject(orderHxr.response)
+            } else {
+                console.log(orderHxr.response)
+                resolve(orderHxr.response)
+            }
+        }
+
+        orderHxr.onerror = () => {
+            reject(orderHxr.response)
+        }
+
+        orderHxr.send(JSON.stringify(body))
+    })
 }
