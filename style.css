@@ -12,6 +12,12 @@ html {
   font-size: 62.5%;
 }
 
+/* @media(max-width: 100px) {
+  html{
+    font-size: 56.6%;
+  }
+} */
+
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
@@ -155,6 +161,53 @@ a:visited {
   right: 0;
   z-index: 10;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.hamburger_column {
+  display: none;
+}
+
+.navigation-hamburger {
+  display: none;
+  width: 30px;
+  margin: auto 10px auto 0;
+}
+
+.hamburger__line {
+  height: 2px;
+  width: 100%;
+  display: block;
+  background: #fff;
+  margin-bottom: 4px;
+  transition: .3s all;
+}
+
+.hamburger__line:last-child {
+  margin-bottom: 0;
+}
+.hamburger_active span {
+  margin-bottom: -2px;
+}
+.hamburger_active span:nth-child(1) {
+  transform: rotate(-45deg);
+}
+.hamburger_active span:nth-child(2) {
+  display: none;
+}
+.hamburger_active span:nth-child(3) {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 992px) {
+  .navigation-column {
+    display: none;
+  }
+  .hamburger_column {
+    display: block;
+  }
+  .menu-row__contacts {
+    text-align: center;
+  }
 }
 
 .menu-bar {
@@ -317,19 +370,37 @@ a:visited {
   text-align: center;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
 }
+@media(max-width: 1000px) {
+  .main_block__content {
+    width: 70rem;
+  }
+}
 
 .main-block__content__card {
   width: 80rem;
   margin: auto;
   margin-bottom: 2.5rem;
 }
-
+@media(max-width: 1000px) {
+  .main-block__content__card {
+    width: 65rem;
+  }
+}
 .main-block__content__card h1 {
   font-size: 4.5rem;
   letter-spacing: 2px;
   padding-bottom: 2rem;
   padding-top: 4rem;
   font-weight: 600;
+}
+@media (max-width: 1000px) {
+  .main-block__content__card h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+    font-weight: 600;
+  }
 }
 
 .main-block__content__card p {
@@ -395,6 +466,11 @@ a:visited {
   justify-content: flex-start;
 
 }
+@media(max-width: 1000px) {
+  .our-advantages__card {
+    width: 70rem;
+  }
+}
 
 .our-advantages__header {
   font-size: 4rem;
@@ -406,6 +482,12 @@ a:visited {
   font-size: 4.5rem;
   margin-bottom: 3.5rem;
   line-height: 4rem;
+}
+@media(max-width: 1000px) {
+  .our-advantages__header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .our-advantages__header p {
@@ -498,6 +580,16 @@ a:visited {
   align-items: center;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .bg-photo__content {
+    width: 100rem;
+  }
+}
+@media (max-width: 1000px) {
+  .bg-photo__content {
+    width: 70rem;
+  }
+}
 
 .bg-photo__content h1 {
   font-size: 4.5rem;
@@ -510,6 +602,11 @@ a:visited {
   justify-content: center;
   gap: 2rem;
   width: 100rem;
+}
+@media(max-width: 1000px) {
+  .bg-photo-section__form {
+    width: 70rem;
+  }
 }
 
 /* WORKFLOW SECTION */
@@ -525,9 +622,20 @@ a:visited {
   margin-top: -6rem;
 }
 
+@media (max-width: 1023px) {
+  .workflow-section {
+    width: 67rem;
+  }
+}
+
 .workflow__header {
   font-size: 4rem;
   margin-bottom: 10rem;
+}
+@media(max-width: 1000px) {
+  .workflow__header {
+    font-size: 3.5rem;
+  }
 }
 
 .workflow__container {
@@ -535,6 +643,13 @@ a:visited {
   justify-content: space-between;
   width: 97rem;
   height: 14rem;
+}
+
+@media (max-width: 1023px) {
+  .workflow__container {
+    width: 67rem;
+    height: 9.5rem;
+  }
 }
 
 .workflow__container .road-img {
@@ -715,6 +830,13 @@ a:visited {
   text-align: center;
   background-color: white;
 }
+@media(max-width: 1000px) {
+  .tarifs__header {
+    font-size: 3.5rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+}
 
 .tarifs-section {
   width: 100rem;
@@ -724,6 +846,14 @@ a:visited {
   margin: auto;
   background-color: white;
 }
+@media(max-width: 1000px) {
+  .tarifs-section {
+    width: 70rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
 
 .tarif-card {
   width: 30rem;
@@ -732,6 +862,11 @@ a:visited {
   border: 1px solid #afafaf;
   position: relative;
   overflow: hidden;
+}
+@media(max-width: 1000px) {
+  .tarif-card {
+    width: 50rem;
+  }
 }
 
 .tarif-image {
@@ -850,6 +985,11 @@ dt:after {
   padding-bottom: 1rem;
   text-align: center;
 }
+@media(max-width: 1000px) {
+  .last-section__header {
+    font-size: 3.5rem;
+  }
+}
 
 .last-section__subheader {
   font-size: 2rem;
@@ -868,6 +1008,11 @@ dt:after {
   padding: 2rem;
   margin: 1.5rem auto;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+@media(max-width: 1000px) {
+  .testimonials {
+    width: 70rem;
+  }
 }
 
 .testimonials::before {
@@ -904,6 +1049,13 @@ dt:after {
 .slide-box {
   padding: 0 80px;
 }
+@media(max-width: 1000px) {
+  .slide-box {
+    width: 70rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 .slide-box .comment {
   /* background-color: #fff; */
   /* color: #fff; */
@@ -916,6 +1068,11 @@ dt:after {
   font-weight: 400;
   width: 80rem;
   border-radius: 22px;
+}
+@media(max-width: 1000px){
+  .slide-box .comment {
+    width: 65rem;
+  }
 }
 .slide-box .comment::before {
   content: "";
@@ -972,8 +1129,34 @@ dt:after {
 .btn-left {
   left: -100px !important;
 }
+
 .btn-right {
   right: -100px !important;
+}
+
+@media(max-width: 1206px) {
+  .btn-left {
+    left: -50px !important;
+  }
+  .btn-right {
+  right: -50px !important;
+  }
+}
+@media(max-width: 1105px) {
+  .btn-left {
+    left: 0 !important;
+  }
+  .btn-right {
+  right: 0 !important;
+  }
+}
+@media(max-width: 1000px) {
+  .btn-left {
+    left: -100px !important;
+  }
+  .btn-right {
+  right: -100px !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -989,7 +1172,14 @@ dt:after {
   /* padding: 10rem 0rem 10rem 0rem; */
   /* padding-bottom: 10rem; */
   margin: auto;
+  flex-wrap: wrap;
   margin-top: 5rem;
+}
+@media(max-width: 1000px) {
+  .our-clients{
+    width: 70rem;
+    row-gap: 2rem;
+  }
 }
 
 .company-icon {
@@ -1025,6 +1215,11 @@ dt:after {
   margin-bottom: 2rem;
   text-align: center;
 }
+@media(max-width: 1000px) {
+  .form-section__header {
+    font-size: 3.5rem;
+  }
+}
 
 .form-section__subheader {
   font-size: 2.5rem;
@@ -1037,6 +1232,11 @@ dt:after {
   margin-top: 2rem;
   padding: 2rem;
   margin: 2rem auto 3rem auto;
+}
+@media(max-width: 1000px) {
+  .form-section__form {
+    width: 70rem;
+  }
 }
 
 
@@ -1205,7 +1405,10 @@ dt:after {
 .form {
   display: flex;
   justify-content: center;
-  gap: 2.4rem
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  row-gap: 0;
 }
 
 .form__group {
