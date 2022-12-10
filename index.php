@@ -136,8 +136,8 @@
 
     <div class="menu-section">
       <div class="container-xxl ">
-        <div class="row">
-          <div class="col col-md-4">
+        <div class="row grid-row">
+          <div class="col col-lg-4 col-md-6">
             <a href="" class="menu-bar__logo"><img src="<?= get_theme_file_uri('assets/logo-barbaris.png'); ?>" alt="Логотип" class="menu-bar__logo-image" srcset=""></a>
           </div>
           <div class="col col-md-4 navigation-column">
@@ -168,22 +168,27 @@
               </li>
             </ul>
           </div>
-          <div class="col col-md-4 menu-row__contacts">
+          <div class="col col-lg-4 col-md-6 menu-row__contacts">
             <div class="menu-bar__contacts">
               <a href="tel:+77012770566" class="menu-bar__tel">+7 (701) 277-05-66</a>
               <span class="menu-bar__social-network"><a target="_blank" href="https://api.whatsapp.com/send?phone=77012770566&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%B1%D0%B5%D0%B4%D1%8B%20%D0%B2%20%D0%BE%D1%84%D0%B8%D1%81"><img src="<?= get_theme_file_uri('assets/wp.png'); ?>" alt="Ссылка на What's app" class="menu-bar__social-media" srcset=""></a></span>
               <span class="menu-bar__social-network"><a target="_blank" href="https://www.instagram.com/barbaris_masterfood/"><img src="<?= get_theme_file_uri('assets/inst.png'); ?>" alt="Ссылка на Instagram" class="menu-bar__social-media" srcset=""></a></span>
-              
+                
+              <div class="navigation-hamburger">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+              </div>
             </div>
           </div>
-          <div class="col col-md-1 hamburger_column">
+          <!-- <div class="col col-md-1 hamburger_column">
             <div class="navigation-hamburger">
               <span class="hamburger__line"></span>
               <span class="hamburger__line"></span>
               <span class="hamburger__line"></span>
             </div>
               
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

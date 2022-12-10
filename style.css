@@ -170,14 +170,13 @@ a:visited {
 .navigation-hamburger {
   display: none;
   width: 30px;
-  margin: auto 10px auto 0;
 }
 
 .hamburger__line {
   height: 2px;
   width: 100%;
   display: block;
-  background: #fff;
+  background: #000;
   margin-bottom: 4px;
   transition: .3s all;
 }
@@ -199,14 +198,14 @@ a:visited {
 }
 
 @media (max-width: 992px) {
+  .menu-row__contacts {
+    text-align: center;
+  }
   .navigation-column {
     display: none;
   }
-  .hamburger_column {
+  .navigation-hamburger {
     display: block;
-  }
-  .menu-row__contacts {
-    text-align: center;
   }
 }
 
@@ -1051,7 +1050,7 @@ dt:after {
 }
 @media(max-width: 1000px) {
   .slide-box {
-    width: 70rem;
+    width: 66rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -1158,6 +1157,14 @@ dt:after {
   right: -100px !important;
   }
 }
+@media(max-width: 920px) {
+  .btn-left {
+    left: -50px !important;
+  }
+  .btn-right {
+  right: -50px !important;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .slide-box {
@@ -1241,10 +1248,9 @@ dt:after {
 
 
 
-.row {
+/* .row {
   max-width: 100%;
   margin: 0 auto;
-  /* border-radius: 20px; */
 }
 .row:not(:last-child) {
   margin-bottom: 8rem;
@@ -1259,8 +1265,8 @@ dt:after {
     max-width: 50rem;
     padding: 0 3rem;
   }
-}
-.row::after {
+} */
+/* .row::after {
   content: "";
   display: table;
   clear: both;
@@ -1281,8 +1287,8 @@ dt:after {
   .row [class^="col-"] {
     width: 100% !important;
   }
-}
-.row .col-1-of-2 {
+} */
+/* .row .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
 }
 .row .col-1-of-3 {
@@ -1299,7 +1305,9 @@ dt:after {
 }
 .row .col-3-of-4 {
   width: calc(3 * ((100% - 3 * 6rem) / 4) + 6rem * 2);
-}
+} */
+
+grid-row
 
 .book {
   background-image: linear-gradient(
@@ -1553,7 +1561,7 @@ dt:after {
 }
 @media (max-width: 56.25em) {
   .footer {
-    padding: 8rem 0;
+    /* padding: 8rem 0; */
   }
 }
 .footer__logo-box {
@@ -1633,10 +1641,12 @@ dt:after {
 .footer_row {
   height: 60vh;
   margin-bottom: 0 !important; 
+  max-width: 100%;
 }
 .footer_column {
   margin: auto 0 !important;
   text-align: center !important;
+  max-width: 100%;
 }
 
 .footer__info {
