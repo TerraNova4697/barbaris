@@ -288,6 +288,10 @@ a:visited {
   gap: 10px;
 }
 
+.call_icon {
+  display: none !important;
+}
+
 .menu-row__contacts {
   text-align: end;
 }
@@ -307,6 +311,14 @@ a:visited {
   height: 3rem;
   text-align: center;
   white-space: nowrap;
+}
+@media(max-width: 465px) {
+  .menu-bar__tel {
+    display: none;
+  }
+  .call_icon {
+    display: flex !important;
+  }
 }
 
 .menu-bar__social-network {
@@ -338,6 +350,7 @@ a:visited {
   /* min-width: ; */
   display: flex;
   justify-content: center;
+  min-height: 60rem;
 }
 
 .bg-video {
@@ -380,7 +393,11 @@ a:visited {
     width: 50rem;
   }
 }
-
+@media(max-width: 533px) {
+  .main_block__content {
+    width: 35rem;
+  }
+}
 .main-block__content__card {
   width: 80rem;
   margin: auto;
@@ -394,6 +411,11 @@ a:visited {
 @media(max-width: 733px) {
   .main-block__content__card {
     width: 49rem;
+  }
+}
+@media(max-width: 533px) {
+  .main-block__content__card {
+    width: 34rem;
   }
 }
 .main-block__content__card h1 {
@@ -429,6 +451,13 @@ a:visited {
   color: #9a9696;
   font-size: 2rem;
   line-height: 1.9rem;
+}
+@media(max-width: 465px) {
+  .main-block__content__card p {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .btn {
@@ -475,6 +504,11 @@ a:visited {
   /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     z-index: -1; */
 }
+@media(max-width: 465px) {
+  .our-advantages-section {
+    padding-bottom: 18rem;
+  }
+}
 
 .our-advantages__card {
   margin: auto;
@@ -510,27 +544,37 @@ a:visited {
     display: none !important;
   }
 }
+@media(max-width: 733px) {
+  .our-advantages__card {
+    width: 34rem;
+  }
+}
 .our-advantages__header {
   font-size: 4rem;
   margin: 4rem auto;
   text-align: center;
 }
 
-.our-advantages__header h1 {
+.our-advantages__header{
   font-size: 4.5rem;
   margin-bottom: 3.5rem;
   line-height: 4rem;
 }
 @media(max-width: 1000px) {
-  .our-advantages__header h1 {
-    font-size: 3.5rem;
+  .our-advantages__header {
+    font-size: 3.5rem !important;
     margin-bottom: 3rem;
   }
 }
 @media(max-width: 733px) {
-  .our-advantages__header h1 {
-    font-size: 3rem;
+  .our-advantages__header {
+    font-size: 3rem !important;
     margin-bottom: 2.5rem;
+  }
+}
+@media(max-width: 465px) {
+  .our-advantages__header {
+    margin: 1rem auto;
   }
 }
 .our-advantages__header p {
@@ -588,6 +632,12 @@ a:visited {
   color: #9a9696;
   line-height: 1.8rem;
 }
+@media(max-width: 465px) {
+  .our-advantages__points p {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+}
 
 .flex-end {
   align-items: flex-end;
@@ -638,7 +688,11 @@ a:visited {
     width: 50rem;
   }
 }
-
+@media (max-width: 533px) {
+  .bg-photo__content {
+    width: 34rem;
+  }
+}
 .bg-photo__content h1 {
   font-size: 4.5rem;
   text-align: center;
@@ -664,6 +718,12 @@ a:visited {
     row-gap: 0;
   }
 }
+
+@media(max-width: 533px) {
+  .bg-photo-section__form {
+    width: 34rem;
+  }
+}
 /* WORKFLOW SECTION */
 
 .workflow-section {
@@ -687,7 +747,17 @@ a:visited {
     width: 47rem;
   }
 }
-
+@media (max-width: 533px) {
+  .workflow-section {
+    width: 33rem;
+  }
+}
+@media(max-width: 465px) {
+  .workflow-section {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+  }
+}
 .workflow__header {
   font-size: 4rem;
   margin-bottom: 10rem;
@@ -722,7 +792,12 @@ a:visited {
     height: 6.8rem;
   }
 }
-
+@media (max-width: 533px) {
+  .workflow__container {
+    width: 33rem;
+    height: 4.8rem;
+  }
+}
 .workflow__container .road-img {
   width: 100%;
   position: absolute;
@@ -758,7 +833,11 @@ a:visited {
   width: fit-content;
   white-space: nowrap;
 }
-
+@media(max-width: 533px) {
+  .stage-note {
+    font-size: 1.5rem;
+}
+}
 .note-1,
 .note-2 {
   top: 5rem;
@@ -892,6 +971,11 @@ a:visited {
   background-color: white;
   padding-bottom: 7rem;
 }
+@media(max-width: 465px) {
+  .section-tarifs-container {
+    padding-bottom: 2rem;
+  }
+}
 
 .tarifs__header {
   font-size: 4rem;
@@ -936,6 +1020,12 @@ a:visited {
     width: 50rem;
   }
 }
+
+@media(max-width: 533px) {
+  .tarifs-section {
+    width: 34rem;
+  }
+}
 .tarif-card {
   width: 30rem;
   height: 47rem;
@@ -947,6 +1037,12 @@ a:visited {
 @media(max-width: 1000px) {
   .tarif-card {
     width: 50rem;
+  }
+}
+
+@media(max-width: 533px) {
+  .tarif-card {
+    width: 34rem;
   }
 }
 
@@ -1059,6 +1155,11 @@ dt:after {
   padding: 7rem 0;
   position: relative;
 }
+@media(max-width: 465px) {
+  .last-section {
+    padding: 2rem;
+  }
+}
 
 .last-section__header {
   font-size: 4rem;
@@ -1102,6 +1203,11 @@ dt:after {
 @media(max-width: 733px) {
   .testimonials {
     width: 50rem;
+  }
+}
+@media(max-width: 533px) {
+  .testimonials {
+    width: 34rem;
   }
 }
 
@@ -1153,6 +1259,13 @@ dt:after {
     padding-right: 1.5rem;
   }
 }
+@media(max-width: 533px) {
+  .slide-box {
+    width: 30rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 .slide-box .comment {
   /* background-color: #fff; */
   /* color: #fff; */
@@ -1180,6 +1293,19 @@ dt:after {
   .slide-box .comment {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+}
+@media(max-width: 533px){
+  .slide-box .comment {
+    font-size: 1.4rem;
+    width: 25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0;
+  }
+  .slide-box  {
+    padding-left: 2.5rem !important;
+    padding-right: 1rem !important;
   }
 }
 .slide-box .comment::before {
@@ -1311,12 +1437,23 @@ dt:after {
     row-gap: 2rem;
   }
 }
+@media(max-width: 533px) {
+  .our-clients{
+    width: 34rem;
+    row-gap: 2rem;
+  }
+}
 .company-icon {
   /* width: 10rem; */
   height: 4rem;
   background-position: center;
   background-size: cover;
 
+}
+@media(max-width: 533px) {
+  .company-icon {
+    height: 3rem;
+  }
 }
 
 .our-clients img {
@@ -1352,6 +1489,8 @@ dt:after {
 @media(max-width: 733px) {
   .form-section__header {
     font-size: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .form-section__subheader {
@@ -1376,7 +1515,19 @@ dt:after {
     width: 50rem;
   }
 }
-
+@media(max-width: 533px) {
+  .form-section__form {
+    width: 34rem;
+  }
+}
+@media(max-width: 465px) {
+  .form-section__form {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 
 /* .row {
   max-width: 100%;
@@ -1678,6 +1829,11 @@ grid-row
 .form-section {
   padding: 7rem 0 3rem 0;
   background-color: white;
+}
+@media(max-width: 465px) {
+  .form-section {
+    padding-top: 2rem;
+  }
 }
 
 /* SECTION FOOTER */
