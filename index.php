@@ -194,7 +194,37 @@
       </div>
     </div>
 
+    <nav class="main-section__nav nav-menu">
+          <ul class="nav-menu__list">
+          <li>
+                <a  href="#advantages" 
+                  ><span class="Centerer"></span
+                  ><span class="Centered">О нас</span></a
+                >
+              </li>
+              <li>
+                <a href="#workflow" "
+                  ><span class="Centerer"></span
+                  ><span class="Centered">Условия</span></a
+                >
+              </li>
+              <li>
+                <a href="#testimonials"
+                  ><span class="Centerer"></span
+                  ><span class="Centered">Отзывы</span></a
+                >
+              </li>
+              <li>
+                <a href="#footer" 
+                  ><span class="Centerer"></span
+                  ><span class="Centered">Контакты</span></a
+                >
+              </li>
+          </ul>
+    </nav>
+
     <div class="main_block-section">
+      
       <div class="bg-video">
       </div>
 

@@ -10,4 +10,5 @@ function queue_scripts_and_styles() {
     wp_enqueue_script( 'quizBtns', get_template_directory_uri() . '/js/quizBtns.js', [], '1.0', true );
     wp_enqueue_script( 'slider', get_template_directory_uri() . '/js/slider.js', [], '1.0', true );
     wp_enqueue_script( 'stages', get_template_directory_uri() . '/js/stages.js', [], '1.0', true );
+    wp_enqueue_script( 'hamburger', get_template_directory_uri() . '/js/hamburger.js', [], '1.0', true );
 }
