@@ -406,6 +406,10 @@
           <span class="stage-note note-4">Договор</span>
         </div>
       </div>
+
+      <div class="workflow__container-mobile">
+        <img src="<?= get_theme_file_uri( 'assets/stages-mobile.png' ) ?>" alt="Этапы работ" srcset="">
+      </div>
     </div>
 
     <div class="section-tarifs-container">
@@ -413,7 +417,7 @@
       <div class="tarifs-section">
 
         <div class="tarif-card">
-          <div class="tarif-image"></div>
+          <div class="tarif-image minimal-tarif"></div>
           <div class="tarif-card__info">
 
             <div class="tarif-card__info-content">
@@ -437,7 +441,7 @@
         </div>
 
         <div class="tarif-card">
-          <div class="tarif-image"></div>
+          <div class="tarif-image standard-tarif"></div>
           <div class="tarif-card__info">
 
             <div class="tarif-card__info-content">
@@ -463,7 +467,7 @@
         </div>
 
         <div class="tarif-card">
-          <div class="tarif-image"></div>
+          <div class="tarif-image maximal-tarif"></div>
           <div class="tarif-card__info">
 
             <div class="tarif-card__info-content">

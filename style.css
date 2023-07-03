@@ -12,20 +12,12 @@ html {
   font-size: 62.5%;
 }
 
-/* @media(max-width: 100px) {
-  html{
-    font-size: 56.6%;
-  }
-} */
-
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   background-color: #f5f5f5;
-  /* overflow: hidden; */
-  /* position: relative; */
 }
 
 section {
@@ -71,6 +63,41 @@ a:visited {
   backface-visibility: hidden;
   /* transition: all .3s ease-in; */
   padding: 2rem;
+}
+@media(max-width: 1000px) {
+  .popup__content {
+    width: 70rem;
+  }
+}
+@media(max-width: 733px) {
+  .popup__content {
+    width: 50rem;
+  }
+  .question-container h1 {
+    font-size: 3rem;
+  }
+}
+@media(max-width: 533px) {
+  .popup__content {
+    width: 35rem;
+  }
+  .question-container h1 {
+    font-size: 3rem;
+  }
+  .question-1, .question-2, .question-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+.question-2 {
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+  }
+  .discount {
+    font-size: 1.4rem !important;
+  }
+  .control-panel {
+    justify-content: space-between !important;
+  }
 }
 
 .question-container {
@@ -839,6 +866,33 @@ a:visited {
   width: 97rem;
   height: 14rem;
 }
+.workflow__container-mobile {
+  display: none;
+}
+@media(max-width: 533px) {
+  .workflow-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .workflow__container {
+    display: none;
+  }
+  .workflow__header {
+    margin-bottom: 2.5rem;
+  }
+  .workflow__container-mobile {
+    display: block;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+  }
+  .workflow__container-mobile img {
+    width: 100%;
+  }
+}
 
 @media (max-width: 1023px) {
   .workflow__container {
@@ -1133,10 +1187,22 @@ a:visited {
 
 .tarif-image {
   width: 100%;
-  height: 100%;
+  height: 50%;
   z-index: 1;
-  background-color: #e68660;
   position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.minimal-tarif {
+  background-image: url('./assets/minimal.jpg');
+}
+.standard-tarif {
+  background-image: url('./assets/standard.jpg');
+}
+.maximal-tarif {
+  background-image: url('./assets/maximal.jpg');
 }
 
 .tarif-info {
@@ -1545,22 +1611,6 @@ dt:after {
   height: 100%;
 }
 
-/* .partner-1 {
-  background-image: url(../assets/jusan.webp);
-}
-.partner-2 {
-  background-image: url(../assets/telecom.svg);
-}
-.partner-3 {
-  background-image: url(../assets/orda-invest.png);
-}
-.partner-4 {
-  background-image: url(../assets/mihon-design.png);
-}
-.partner-5 {
-  background-image: url(../assets/ALSI.png);
-} */
-
 .form-section__header {
   font-size: 4rem;
   margin-bottom: 2rem;
@@ -1613,67 +1663,6 @@ dt:after {
     padding-bottom: 0;
   }
 }
-
-/* .row {
-  max-width: 100%;
-  margin: 0 auto;
-}
-.row:not(:last-child) {
-  margin-bottom: 8rem;
-}
-@media (max-width: 56.25em) {
-  .row:not(:last-child) {
-    margin-bottom: 6rem;
-  }
-}
-@media (max-width: 56.25em) {
-  .row {
-    max-width: 50rem;
-    padding: 0 3rem;
-  }
-} */
-/* .row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row [class^="col-"] {
-  float: left;
-}
-.row [class^="col-"]:not(:last-child) {
-  margin-right: 6rem;
-}
-@media (max-width: 56.25em) {
-  .row [class^="col-"]:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 6rem;
-  }
-}
-@media (max-width: 56.25em) {
-  .row [class^="col-"] {
-    width: 100% !important;
-  }
-} */
-/* .row .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
-}
-.row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
-}
-.row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
-}
-.row .col-1-of-4 {
-  width: calc((100% - 3 * 6rem) / 4);
-}
-.row .col-2-of-4 {
-  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
-}
-.row .col-3-of-4 {
-  width: calc(3 * ((100% - 3 * 6rem) / 4) + 6rem * 2);
-} */
-
-/* grid-row */
 
 .book {
   background-image: linear-gradient(
@@ -1935,11 +1924,7 @@ dt:after {
   font-size: 1.4rem;
   color: #f7f7f7;
 }
-@media (max-width: 56.25em) {
-  .footer {
-    /* padding: 8rem 0; */
-  }
-}
+
 .footer__logo-box {
   text-align: center;
   margin-bottom: 8rem;
@@ -2034,17 +2019,4 @@ dt:after {
   max-height: 5.5rem !important;
   height: 5.5rem !important;
   font-size: 2rem !important;
-  
-}
-
-/* .phone-input::placeholder {
-  color: #b61c2d;
-} */
-
-/* QUIZ SECTION */
-
-
-
-.place {
-  margin-top: 30rem;
 }
